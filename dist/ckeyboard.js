@@ -1,3 +1,14 @@
+/*!
+ * cKeyboard JavaScript Library v1.0.0
+ * https://github.com/c42759/ckeyboard/
+ *
+ *
+ * Copyright c42759 (Carlos Santos) and other contributors
+ * Released under the MIT license
+ *
+ * Date: 2019-07-03
+ */
+
 var cKeyboard_config = {
 	input_target : 'input',
 	
