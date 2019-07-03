@@ -1,0 +1,118 @@
+.cK {}
+
+.cK.cKLine {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style-type : none;
+}
+
+.cK.cKKey, .cK.cKFunction {
+	font-weight: bold;
+	font-size: 34px;
+	display: inline-block;
+	border-radius: 6px;
+	background-color: #fff;
+	color: #000;
+	margin: 5px 8px;
+	padding: 0 15px;
+	min-width: 70px;
+	height: 70px;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 70px;
+	overflow: hidden;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
+	outline: 0;
+}
+
+.cK.cKKey.uppercase {
+	text-transform: uppercase;
+}
+
+.cK.cK-Active {}
+
+.cK .cK:active {}
+
+.cK.cKey-backspace {
+	width: 75px;
+	background-image: url("images/light/delete.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	color: transparent;
+}
+
+.cK.cKey-shift {
+	width: 110px;
+	background-image: url("images/light/shift.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	color: transparent;
+}
+
+.cK.cKey-space {
+	width: 400px;
+}
+
+.cK.cKey-return {
+	position: relative;
+	width: 170px;
+	animation: none !important;
+	color: #fff;
+	overflow:hidden;
+	background-color: #383736;
+	z-index: 1;
+	transition:         0.07s ease-in;
+	-o-transition:      0.07s ease-in;
+	-ms-transition:     0.07s ease-in;
+	-moz-transition:    0.07s ease-in;
+	-webkit-transition: 0.07s ease-in;
+}
+
+.cK.cKey-return:active {
+	color: #383736;
+}
+
+.cK.cKey-return:before {
+	color: #383736;
+	content: "";
+	position: absolute;
+	background-color: #fff;
+	bottom: 0;
+	left: 0;
+	right: 100%;
+	top: 0;
+	z-index: -1;
+	transition: right 0.07s ease-in;
+}
+
+.cK.cKey-return:active:before {
+	right: 0;
+}
+
+/* DARK THEME */
+
+.dark .cK.cKKey, .cK.cKFunction {
+	color: #fff;
+	background-color: #383838;
+	border-color: #A7A4A4;
+}
+
+.dark .cK.cKey-backspace {
+	background-image: url("images/dark/delete.svg");
+}
+
+.dark .cK.cKey-shift {
+	background-image: url("images/dark/shift.svg");
+}
+
+.dark .cK.cKey-return {
+	background-color: #767676;
+}
