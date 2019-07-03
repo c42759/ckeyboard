@@ -37,3 +37,21 @@ The first thing you will require is a keyboard holder that will hold the keyboar
 cKeyboard_config.input_target = "#search_field";
 cKeyboard();
 ```
+
+## Credits
+
+*Markdown Here* was coded on the shoulders of giants.
+
+* Markdown-to-HTML: [chjj / marked](https://github.com/chjj/marked)
+* Syntax highlighting: [isagalaev / highlight.js](https://github.com/isagalaev/highlight.js)
+* HTML-to-text: [mtrimpe / jsHtmlToText](https://github.com/mtrimpe/jsHtmlToText)
+
+## Feedback
+
+All bugs, feature requests, pull requests, feedback, etc., are welcome. [Create an issue](https://github.com/adam-p/markdown-here/issues). Or [post to the "markdown-here" Google Group](https://groups.google.com/forum/?fromgroups=#!forum/markdown-here).
+
+## License
+
+### Code
+
+MIT License: See [the `LICENSE` file](https://github.com/c42759/ckeyboard/blob/master/LICENSE).
