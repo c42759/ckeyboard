@@ -1,9 +1,8 @@
 var cKeyboard_config = {
-	target : '#keyboard',
 	input_target : 'input',
-
+	
+	target : '#keyboard',
 	capslock_state : false,
-
 	layout : [
 		{
 			'q' : {name : 'q', text : 'q', class : 'cKKey'},
@@ -92,7 +91,6 @@ var cKeyboard_config = {
 };
 
 function cKeyboard () {
-
 	// KEYBOARD CREATOR
 	$.each(cKeyboard_config.layout, function (i, e) {
 		$(cKeyboard_config.target).append('<ul class="cK cKLine"></ul>');  // CREATE LINE
@@ -103,7 +101,9 @@ function cKeyboard () {
 			$(line_target).append('<li class="cK ' + ea.class + ' cKey-' + ea.name + '">' + ea.text + '</li>');
 		});
 	});
+
 	// KEYBOARD NUMERIC CREATOR
+	$(cKeyboard_config.target_numeric).hide();
 	$.each(cKeyboard_config.layout_numeric, function (i, e) {
 		$(cKeyboard_config.target_numeric).append('<ul class="cK cKLine"></ul>');  // CREATE LINE
 
