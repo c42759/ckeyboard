@@ -11,7 +11,7 @@
 
 var cKeyboard_config = {
 	input_target : 'input',
-	
+	interation_mode : 'click', // touchstart
 	target : '#keyboard',
 	capslock_state : false,
 	layout : [
@@ -126,7 +126,7 @@ function cKeyboard () {
 	});
 
 	// KEY CLICK
-	$('body').on('touchstart', '.cK.cKKey', function () {
+	$('body').on(cKeyboard_config.interation_mode, '.cK.cKKey', function () {
 		if (cKeyboard_config.capslock_state) {
 			$(cKeyboard_config.input_target).val(
 				$(cKeyboard_config.input_target).val() + $(this).html().toUpperCase()
@@ -139,7 +139,7 @@ function cKeyboard () {
 	});
 
 	// UPPERCASE SHIFT CLICK
-	$('body').on('touchstart', '.cK.cKFunction.cKey-shift', function () {
+	$('body').on(cKeyboard_config.interation_mode, '.cK.cKFunction.cKey-shift', function () {
 		cKeyboard_config.capslock_state = !cKeyboard_config.capslock_state;
 		if (cKeyboard_config.capslock_state) {
 			$('.cK.cKKey').addClass('uppercase');
@@ -149,19 +149,19 @@ function cKeyboard () {
 	});
 
 	// UPPERCASE BACKSPACE CLICK
-	$('body').on('touchstart', '.cK.cKFunction.cKey-backspace', function () {
+	$('body').on(cKeyboard_config.interation_mode, '.cK.cKFunction.cKey-backspace', function () {
 		$(cKeyboard_config.input_target).val($(cKeyboard_config.input_target).val().slice(0, -1));
 	});
 
 	// UPPERCASE SHIFT CLICK
-	$('body').on('touchstart', '.cK.cKFunction.cKey-numeric-switch', function () {
+	$('body').on(cKeyboard_config.interation_mode, '.cK.cKFunction.cKey-numeric-switch', function () {
 		$.when($(cKeyboard_config.target).fadeOut()).done(function () {
 			$(cKeyboard_config.target_numeric).fadeIn();
 		});
 	});
 
 	// UPPERCASE SHIFT CLICK
-	$('body').on('touchstart', '.cK.cKFunction.cKey-abc-switch', function () {
+	$('body').on(cKeyboard_config.interation_mode, '.cK.cKFunction.cKey-abc-switch', function () {
 		$.when($(cKeyboard_config.target_numeric).fadeOut()).done(function () {
 			$(cKeyboard_config.target).fadeIn();
 		});
