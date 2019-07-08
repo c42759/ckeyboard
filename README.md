@@ -29,7 +29,7 @@ Note: This plugin requires your website or application already runs a copy of [j
 The first thing you will require is a keyboard holder that will hold the keyboard, and an input field on which the keyboard will operate.
 
 ```html
-<input type="text" id="search_field">
+<input type="text" id="search_field" maxlength="25">
 <div id="keyboard"></div>
 <div id="keyboard_numeric"></div>
 ```
