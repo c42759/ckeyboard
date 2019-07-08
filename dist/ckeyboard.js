@@ -1,5 +1,5 @@
 /*!
- * cKeyboard JavaScript Library v1.0.0
+ * cKeyboard JavaScript Library v1.0.1
  * https://github.com/c42759/ckeyboard/
  *
  *
@@ -126,7 +126,13 @@ function cKeyboard () {
 	});
 
 	// KEY CLICK
-	$('body').on(cKeyboard_config.interation_mode, '.cK.cKKey', function () {
+	$('body').on('touchstart', '.cK.cKKey', function () {
+		if ($(cKeyboard_config.input_target).attr('maxlength') !== undefined) {
+			if ($(cKeyboard_config.input_target).val().length >= parseInt($(cKeyboard_config.input_target).attr('maxlength'))) {
+				return;
+			}
+		}
+		
 		if (cKeyboard_config.capslock_state) {
 			$(cKeyboard_config.input_target).val(
 				$(cKeyboard_config.input_target).val() + $(this).html().toUpperCase()
