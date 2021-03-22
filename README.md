@@ -3,7 +3,7 @@
 # ckeyboard
 
 A simple jQuery on screen keyboard.
-## Feautures
+## Features
 - Easy Setup
 - Switch layout on the Fly
 - Supports multiple input fields
@@ -13,17 +13,19 @@ A simple jQuery on screen keyboard.
 
 #### 1.1. Installation
 
-- First, copy and paste `dist/ckeyboard.min.js` in your project, and link to it before the closing `</body>` element. Make sure jquery is linked before this.
-- Next, you'll need to copy and paste the plugin's css into your project.
-- Lastly, link to the keyboard css file `ckeyboard.css` file before the closing `</head>` element.
+- First, copy and paste `dist/ckeyboard.min.js` in your project, and link to it before the closing `</body>` element. Make sure *jQuery* is linked before this.
+- Next, you'll need to copy and paste the plugin's CSS into your project.
+- Lastly, link to the keyboard *CSS* file `ckeyboard.css` file before the closing `</head>` element.
 
-Note: This plugin requires your website or application already runs a copy of [jQuery](http://jquery.com/), version 3.x.x or higher.
+**Note:** This *plugin* requires your website or application already runs a copy of [jQuery](http://jquery.com/), version 3.x.x or higher.
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="ckeyboard.min.js"></script>
-    <link rel="stylesheet" href="ckeyboard.css">
- 
+```html
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="ckeyboard.min.js"></script>
+<link rel="stylesheet" href="ckeyboard.css">
+```
+
 #### 1.2 The Basics
 
 The first thing you will require is a keyboard holder that will hold the keyboard, and an input field on which the keyboard will operate.
@@ -40,6 +42,4 @@ cKeyboard();
 
 ## License
 
-### Code
-
-MIT License: See [the `LICENSE` file](https://github.com/c42759/ckeyboard/blob/master/LICENSE).
+MIT License: See [the LICENSE file](https://github.com/c42759/ckeyboard/blob/master/LICENSE).
